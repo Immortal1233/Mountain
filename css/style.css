@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+
+/* oswald-600 - latin_cyrillic */
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/oswald-v35-latin_cyrillic-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/oswald-v35-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-v35-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/oswald-v35-latin_cyrillic-600.woff") format("woff"), url("../fonts/oswald-v35-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/oswald-v35-latin_cyrillic-600.svg#Oswald") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-regular - latin_cyrillic */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - latin_cyrillic */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/*  header */
+
+.header {
+  background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 35px 0px 200px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  display: block;
+  max-width: 101px;
+  padding-top: 10px;
+}
+
+.header__logo-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.66667%;
+          flex: 0 0 16.66667%;
+}
+
+.menu-wrapper {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.33333%;
+          flex: 0 0 58.33333%;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-list__item {
+  margin-right: 30px;
+  padding-top: 12px;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FCFCFC;
+}
+
+.menu-list__link:hover {
+  color: #add8e6;
+}
+
+.user-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-info__item {
+  padding-top: 5px;
+}
+
+.user-info__item:first-child {
+  padding-top: 12px;
+  margin-right: 43px;
+}
+
+.user-info__item:nth-child(2) {
+  margin-right: 30px;
+}
+
+.user-info__link-phone {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FCFCFC;
+}
+
+.user-info__link-phone:hover {
+  color: #add8e6;
+}
+
+.user-info__link-search {
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 17px;
+  line-height: 40px;
+  background-color: rgba(252, 252, 252, 0.4);
+}
+
+.user-info__link-search:hover {
+  background-color: #add8e6;
+  color: #add8e6;
+}
+
+.user-info__link-auth {
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 17px;
+  line-height: 40px;
+  background-color: rgba(252, 252, 252, 0.4);
+}
+
+.user-info__link-auth:hover {
+  background-color: #add8e6;
+  color: #add8e6;
+}
+
+.search-form {
+  display: block;
+  position: absolute;
+  padding-top: 3px;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.search-form__input {
+  width: 220px;
+  height: 40px;
+  outline: none;
+  border: 3px solid #add8e6;
+  border-radius: 20px;
+}
+
+/* main */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
