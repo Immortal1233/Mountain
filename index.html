@@ -40,29 +40,130 @@
                   <a href="tel:8(800)777-33-25" class="user-info__link-phone">8 (800) 777-33-25</a>
                </li>
                <li class="user-info__item">
-                  <a href="#" class="user-info__link-search">
+                  <a href="#search-form" class="user-info__link-search">
                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 13.9999L10.8583 10.8583M12.5555 6.77776C12.5555 9.96872 9.96872 12.5555 6.77776 12.5555C3.58679 12.5555 1 9.96872 1 6.77776C1 3.58679 3.58679 1 6.77776 1C9.96872 1 12.5555 3.58679 12.5555 6.77776Z"stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <form action="#" method="GET" class="search-form">
-                           <input type="text" name="search" class="search-form__input" placeholder="Введите запрос">
-                        </form>                        
+                        <path
+                           d="M14 13.9999L10.8583 10.8583M12.5555 6.77776C12.5555 9.96872 9.96872 12.5555 6.77776 12.5555C3.58679 12.5555 1 9.96872 1 6.77776C1 3.58679 3.58679 1 6.77776 1C9.96872 1 12.5555 3.58679 12.5555 6.77776Z"
+                           stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
                   </a>
                </li>
                <li class="user-info__item">
-                  <a href="#" class="user-info__link-auth">
+                  <a href="#popup" class="user-info__link-auth">
                      <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 14V12.5556C12 11.7894 11.7103 11.0546 11.1945 10.5128C10.6788 9.97103 9.97935 9.66667 9.25 9.66667H3.75C3.02065 9.66667 2.32118 9.97103 1.80546 10.5128C1.28973 11.0546 1 11.7894 1 12.5556V14M9.25 3.88889C9.25 5.48438 8.01878 6.77778 6.5 6.77778C4.98122 6.77778 3.75 5.48438 3.75 3.88889C3.75 2.2934 4.98122 1 6.5 1C8.01878 1 9.25 2.2934 9.25 3.88889Z" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
+                        <path
+                           d="M12 14V12.5556C12 11.7894 11.7103 11.0546 11.1945 10.5128C10.6788 9.97103 9.97935 9.66667 9.25 9.66667H3.75C3.02065 9.66667 2.32118 9.97103 1.80546 10.5128C1.28973 11.0546 1 11.7894 1 12.5556V14M9.25 3.88889C9.25 5.48438 8.01878 6.77778 6.5 6.77778C4.98122 6.77778 3.75 5.48438 3.75 3.88889C3.75 2.2934 4.98122 1 6.5 1C8.01878 1 9.25 2.2934 9.25 3.88889Z"
+                           stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
                   </a>
                </li>
             </ul>
+            <form action="#" method="GET" class="search-form" id="search-form">
+               <input type="text" name="search" id="search-field" class="search-form__input"
+                  placeholder="Введите запрос">
+            </form>
          </div>
       </nav>
+      <section class="promo">
+         <h2 class="promo__title">Эверест</h2>
+         <a href="#" class="promo__link-button">Подробнее</a>
+      </section>
    </div>
 </header>
    <main>
-
+      <section class="about">
+   <div class="text-wrapper">
+      <h2 class="about__title">Туры с&nbsp;восхождением<br> на&nbsp;вершины мира</h2>
+         <p class="about__description">Мы&nbsp;являемся экспертами в&nbsp;организации альпинистских туров для опытных альпинистов и
+            для новичков. Вы&nbsp;можете доверить нам полную организацию вашего приключения от&nbsp;А до&nbsp;Я и&nbsp;быть уверенными в
+            качестве и&nbsp;безопасности восхождения.</p>
+         <p class="about__description">Наша компания предоставляет все необходимое: консультацию по&nbsp;выбору тура, перелет,
+            визу, бронирование проживания, питание, оборудование, необходимое для восхождения, опытных гидов, полное
+            сопровождение.</p>
+   </div>
+   <div class="image-wrapper">
+      <img src="img/map-tour.jpg" width="815" height="375" alt="Карта туров" class="about__image">
+   </div>
+</section>
+      <section class="promo-card">
+   <h2 class="promo-card__title">Популярные туры</h2>
+   <div class="container-card">
+      <div class="card">
+         <img src="img/first-card.jpg" width="370" height="326" alt="Популярный тур Белуха" class="card__image">
+         <div class="card__inner">
+            <div class="card__top">
+               <p class="card__location">Россия</p>
+               <button class="card__button"></button>
+               <div class="card__body">
+                  <h3 class="card__title">Белуха</h3>
+                  <ul class="card__elements">
+                     <li class="card__item">4506&nbsp;м</li>
+                     <li class="card__item">12&nbsp;дней</li>
+                     <li class="card__item">от&nbsp;45000&nbsp;₽</li>
+                  </ul>
+                  <p class="card__level card-level--icon">Средний уровень</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card">
+         <img src="img/second-card.jpg" width="370" height="326" alt="Популярный тур Эльбрус" class="card__image">
+         <div class="card__inner">
+            <div class="card__top">
+               <p class="card__location">Россия</p>
+               <button class="card__button"></button>
+               <div class="card__body">
+                  <h3 class="card__title">Эльбрус</h3>
+                  <ul class="card__elements">
+                     <li class="card__item">5642&nbsp;м</li>
+                     <li class="card__item">10&nbsp;дней</li>
+                     <li class="card__item">от&nbsp;25000&nbsp;₽</li>
+                  </ul>
+                  <p class="card__level card-level--icon">Средний уровень</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card">
+         <img src="img/third-card.jpg" width="370" height="326" alt="Популярный тур Килиманджаро" class="card__image">
+         <div class="card__inner">
+            <div class="card__top">
+               <p class="card__location">Россия</p>
+               <button class="card__button"></button>
+               <div class="card__body">
+                  <h3 class="card__title">Килиманджаро</h3>
+                  <ul class="card__elements">
+                     <li class="card__item">5895&nbsp;м</li>
+                     <li class="card__item">4&nbsp;дня</li>
+                     <li class="card__item">от&nbsp;55000&nbsp;₽</li>
+                  </ul>
+                  <p class="card__level card-level--icon">Простой уровень</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+      
+      
+      
+      
+      
+<section id="popup" class="popup">
+   <a href="##" class="popup__close-button">X</a>
+   <form action="#" method="POST" class="form-auth">
+      <fieldset class="form-auth__border">
+         <legend class="form-auth__title">
+            Авторизация
+         </legend>
+         <label class="form-auth__label" for="email-field">Логин</label><br>
+         <input type="email" name="email" id="email-field" class="form-auth__email" placeholder="Введите email" required><br>
+         <label for="password-field" class="form-auth__label">Пароль</label><br>
+         <input type="password" name="password" id="password-field" class="form-auth__password" placeholder="Введите пароль" required><br>
+         <button type="submit" class="form-auth__submit">Отправить</button>
+      </fieldset>
+   </form>
+</section>
    </main>
    
 </body>
