@@ -546,7 +546,7 @@ select {
   width: 35px;
   height: 35px;
   background-color: #E6E8EA;
-  background-image: url(../../img/left-arrow.svg);
+  background-image: url(../img/left-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 7px;
@@ -563,7 +563,7 @@ select {
   width: 35px;
   height: 35px;
   background-color: #E6E8EA;
-  background-image: url(../../img/right-arrow.svg);
+  background-image: url(../img/right-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 7px;
@@ -591,7 +591,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../../img/bg-table.jpg);
+  background-image: url(../img/bg-table.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -933,12 +933,6 @@ select {
      object-fit: cover;
 }
 
-.wrapper-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
 .wrapper-feedback {
   max-width: 683px;
   background-color: #061B28;
@@ -959,6 +953,12 @@ select {
   line-height: 140%;
   color: #FCFCFC;
   background-color: #ec5118;
+}
+
+.wrapper-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 /* contacts */
