@@ -844,7 +844,7 @@ select {
 }
 
 .feedback__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 52px;
@@ -854,7 +854,7 @@ select {
 }
 
 .feedback__description {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -877,9 +877,9 @@ select {
 .feedback__name {
   border: none;
   outline: none;
-  border-bottom: 1px solid #45545E;
+  border-bottom: 1px solid #45545e;
   background-color: #061B28;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -891,9 +891,9 @@ select {
 .feedback__phone {
   border: none;
   outline: none;
-  border-bottom: 1px solid #45545E;
+  border-bottom: 1px solid #45545e;
   background-color: #061B28;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -905,9 +905,9 @@ select {
 .feedback__email {
   border: none;
   outline: none;
-  border-bottom: 1px solid #45545E;
+  border-bottom: 1px solid #45545e;
   background-color: #061B28;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -918,7 +918,7 @@ select {
 
 .feedback__personal-data {
   width: 393px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -927,18 +927,22 @@ select {
 }
 
 .feedback__image {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: auto;
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.wrapper-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .wrapper-feedback {
   max-width: 683px;
   background-color: #061B28;
-  padding: 80px 60px 0px 98px;
+  padding: 80px 60px 80px 98px;
 }
 
 .feeedback {
@@ -948,13 +952,13 @@ select {
 .feeedback__button {
   max-width: 525px;
   height: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   color: #FCFCFC;
-  background-color: #EC5118;
+  background-color: #ec5118;
 }
 
 /* contacts */
