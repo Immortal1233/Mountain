@@ -192,7 +192,6 @@ select {
 }
 
 .user-wrapper {
-  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
@@ -311,10 +310,7 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 140px 0px 150px 180px;
+  padding: 140px 0px 150px 15px;
 }
 
 .about__title {
@@ -347,6 +343,7 @@ select {
 
 .text-wrapper {
   display: block;
+  margin-left: auto;
 }
 
 .image-wrapper {
@@ -398,7 +395,7 @@ select {
 }
 
 .card:nth-of-type(3) .card__inner .card-level--icon {
-  background-image: url(../../img/icon-middle-semicircle.svg);
+  background-image: url(../img/icon-middle-semicircle.svg);
 }
 
 .card:last-child {
@@ -531,7 +528,7 @@ select {
 }
 
 .card-level--icon {
-  background-image: url(../../img/icon-middle-circle.svg);
+  background-image: url(../img/icon-middle-circle.svg);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 12px 12px;
@@ -795,6 +792,10 @@ select {
   margin-right: 70px;
 }
 
+.article {
+  display: block;
+}
+
 .article__image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -971,19 +972,6 @@ select {
   position: relative;
 }
 
-.contacts::before {
-  content: '';
-  position: absolute;
-  top: 45%;
-  left: 23%;
-  width: 33px;
-  height: 40px;
-  background-image: url(../../img/icon-contacts-location.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .contacts__image {
   height: auto;
   -o-object-fit: cover;
@@ -1086,36 +1074,52 @@ select {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 @media (max-width: 1199.98px) {
   .container {
-    max-width: 1000px;
+    max-width: 1100px;
   }
 
-  .user-info__item:first-child {
-    margin-right: auto;
+  .user-info__item {
+    margin: 0 auto !important;
   }
 
-  .user-info__item:nth-child(2) {
-    margin-right: auto;
+  .container-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
-  .about {
-    padding: 140px 0px 150px 60px;
+  .button-card {
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 991.98px) {
   .container {
-    max-width: 800px;
+    max-width: 850px;
+  }
+
+  .menu-list__item {
+    margin: 0 auto;
+  }
+
+  .user-info__link-phone {
+    display: none;
+  }
+
+  .promo-card {
+    padding-bottom: 100px;
   }
 }
 
 @media (max-width: 767.98px) {
   .container {
-    max-width: 600px;
+    max-width: 650px;
   }
 }
 
